@@ -8,6 +8,7 @@ module.exports = {
     description: `Racoma Strategies is a search fund focused on acquiring, operating, and growing a single high-potential small business.`,
   },
   plugins: [
+    'gatsby-plugin-netlify',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
