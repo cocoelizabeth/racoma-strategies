@@ -30,34 +30,31 @@ function HeroSection() {
   console.log(hero)
   return (
     <HeroSectionStyles>
-      <div className="container">
-        <div className="hero__wrapper">
-          <div className="left">
-            <Title>{hero.headlineText}</Title>
-            <MyPortableText
-              className=""
-              value={hero._rawSubHeadlineText}
-            ></MyPortableText>
-            <Button to={hero.link} tag={Link}>
-              {hero.cta}
-            </Button>
-            <br />
-            <br />
-            <Button to="/get-an-offer" tag={Link} variant="secondaryLight">
-              Secondary Light
-            </Button>
-            <br />
-            <br />
-            <Button to="/get-an-offer" tag={Link} variant="primaryDark">
-              Primary Dark
-            </Button>
-            <br />
-            <br />
-            <Button to="/get-an-offer" tag={Link} variant="secondaryDark">
-              Secondary Dark
-            </Button>
-          </div>
-          <div className="right">
+      <div className="hero__wrapper">
+        <div className="headlineText h2">{hero.headlineText}</div>
+        <div className="subheadingText">
+          <MyPortableText
+            className=""
+            value={hero._rawSubHeadlineText}
+          ></MyPortableText>
+          <Button to={hero.link} tag={Link}>
+            {hero.cta}
+          </Button>
+        </div>
+      </div>
+
+      {/* <div className="hero__wrapper">
+        <div className="left">
+          <Title>{hero.headlineText}</Title>
+          <MyPortableText
+            className=""
+            value={hero._rawSubHeadlineText}
+          ></MyPortableText>
+          <Button to={hero.link} tag={Link}>
+            {hero.cta}
+          </Button>
+        </div> */}
+      {/* <div className="right">
             <StaticImage
               className="hero__image"
               src="../../images/vr-guy.jpg"
@@ -65,9 +62,8 @@ function HeroSection() {
               placeholder="blurred"
               objectPosition="50% 30%"
             />
-          </div>
-        </div>
-      </div>
+          </div> */}
+      {/* </div> */}
     </HeroSectionStyles>
   );
 }

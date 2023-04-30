@@ -8,9 +8,9 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
     <HeroSection />
-    
+{/*     
       <FeaturedBlogs />
-      <TopCategories />
+      <TopCategories /> */}
     
   </>
 );

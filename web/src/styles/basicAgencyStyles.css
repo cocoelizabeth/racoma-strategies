@@ -673,10 +673,10 @@ sup {
     --ease-in-out-soft: cubic-bezier(0.72,0,0.28,1);
     --ease-in-out-hard: cubic-bezier(0.77,0,0.175,1);
     --ease-garret: cubic-bezier(0.5,0,0,1);
-    --page-intro-small: var(--rs-size-spacing-section-intro-sm-mobile);
+    /* --page-intro-small: var(--rs-size-spacing-section-intro-sm-mobile); */
     --page-intro-large: var(--rs-size-spacing-section-intro-lg-mobile);
     --page-section: var(--rs-size-spacing-section-page-mobile);
-    --caseStudy-section: var(--rs-size-spacing-section-casestudy-mobile);
+    /* --caseStudy-section: var(--rs-size-spacing-section-casestudy-mobile); */
     --service-section: var(--rs-size-spacing-section-service-mobile);
     --industry-section: var(--rs-size-spacing-section-industry-mobile);
     --blog-section: var(--rs-size-spacing-section-blog-mobile);
@@ -689,9 +689,9 @@ sup {
 
 @media only screen and (min-width: 1280px) {
     :root {
-        --page-intro-small:var(--rs-size-spacing-section-intro-sm-desktop);
+        /* --page-intro-small:var(--rs-size-spacing-section-intro-sm-desktop); */
         --page-intro-large: var(--rs-size-spacing-section-intro-lg-desktop);
-        --page-section: var(--rs-size-spacing-section-page-desktop);
+        /* --page-section: var(--rs-size-spacing-section-page-desktop); */
         --caseStudy-section: var(--rs-size-spacing-section-casestudy-desktop);
         --service-section: var(--rs-size-spacing-section-service-desktop);
         --industry-section: var(--rs-size-spacing-section-industry-desktop);
@@ -775,11 +775,11 @@ sup {
 }
 
 [data-page-type=thinking] [data-uri]>section:first-of-type {
-    margin-top: 0
+    margin-top: 0;
 }
 
 [data-page-type=thinking] section>[data-meta-bar]+* {
-    margin-top: var(--thinking-meta-bar)
+    margin-top: var(--thinking-meta-bar);
 }
 
 :root {
@@ -788,12 +788,12 @@ sup {
     --header-height: calc(1.8rem + (1.5rem + 2.5vw) * 2);
     --bottom-panel-height: 0rem;
     --sticky-top: 80;
-    --initial-animation-delay: var(--rs-time-delay-initial)
+    --initial-animation-delay: var(--rs-time-delay-initial);
 }
 
 @media only screen and (min-width: 1280px) {
     :root {
-        --header-height:12.8rem
+        --header-height:12.8rem;
     }
 }
 

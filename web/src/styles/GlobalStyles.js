@@ -268,7 +268,7 @@ ${"" /* HEADER STYLES */}
 }
 
 main {
-    padding-top: var(--header-height);
+    margin-top: var(--header-height);
 }
 
 :root {
@@ -285,9 +285,9 @@ main {
     --ease-in-out-soft: cubic-bezier(0.72,0,0.28,1);
     --ease-in-out-hard: cubic-bezier(0.77,0,0.175,1);
     --ease-garret: cubic-bezier(0.5,0,0,1);
-    --page-intro-small: var(--rs-size-spacing-section-intro-sm-mobile);
+    --page-intro-small: 6rem;
     --page-intro-large: var(--rs-size-spacing-section-intro-lg-mobile);
-    --page-section: var(--rs-size-spacing-section-page-mobile);
+    --page-section: 12.5vw;
     --caseStudy-section: var(--rs-size-spacing-section-casestudy-mobile);
     --service-section: var(--rs-size-spacing-section-service-mobile);
     --industry-section: var(--rs-size-spacing-section-industry-mobile);
@@ -306,6 +306,10 @@ main {
         --grid-padding: 8rem;
         --grid-column-count: 12;
         --grid-gutter: 2rem;
+
+        --page-intro-small:4.1vw;
+        --page-section: 12.5vw;
+         
     }
 }
   
