@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import { MdSearch, MdMenu, MdClose } from 'react-icons/md';
+import { MdClose } from 'react-icons/md';
 import clsx from 'clsx';
 import HeaderStyles from '../styles/HeaderStyles';
 import { menu } from '../constants/menu';
