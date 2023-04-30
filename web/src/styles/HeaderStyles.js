@@ -20,6 +20,7 @@ export default styled.header`
     align-items: center;
     padding: calc(1.5rem + 2.5vw) var(--grid-padding);
     width: 100%;
+    border-bottom: 1px solid var(--racoma-light);
   }
 
   @media only screen and (min-width: 1280px) {
@@ -39,6 +40,8 @@ export default styled.header`
     height: 100%;
     transition: background-color 0.65s cubic-bezier(0.72,0,0.28,1),
     opacity 0.65s; cubic-bezier(0.72,0,0.28,1);
+    background-color: var(--racoma-teal);
+    
   }
 
   .header__logo {

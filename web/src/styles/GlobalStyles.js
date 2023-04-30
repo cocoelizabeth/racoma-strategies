@@ -272,24 +272,40 @@ main {
 }
 
 :root {
-    ${
-      "" /* --grid-width: var(--rs-size-grid-width);
-    --grid-height: var(--rs-size-grid-height); */
-    }
+    
+    --grid-width: 100vw;
+    --grid-height: 100vh;
     --grid-padding: 5.4vw;
-    ${
-      "" /* --grid-column-count: var(--rs-layout-grid-columns-small);
-    --grid-gutter: var(--rs-size-grid-gutter-mobile) */
-    }
+    --grid-column-count: 6;
+    --grid-gutter:  1.6rem;
+
+    --ease-out: cubic-bezier(0.28,0.44,0.49,1);
+    --bounce: cubic-bezier(0.6,0,0.1,1.4);
+    --ease-out-soft: cubic-bezier(0.28,0,0.49,1);
+    --ease-in-out-soft: cubic-bezier(0.72,0,0.28,1);
+    --ease-in-out-hard: cubic-bezier(0.77,0,0.175,1);
+    --ease-garret: cubic-bezier(0.5,0,0,1);
+    --page-intro-small: var(--rs-size-spacing-section-intro-sm-mobile);
+    --page-intro-large: var(--rs-size-spacing-section-intro-lg-mobile);
+    --page-section: var(--rs-size-spacing-section-page-mobile);
+    --caseStudy-section: var(--rs-size-spacing-section-casestudy-mobile);
+    --service-section: var(--rs-size-spacing-section-service-mobile);
+    --industry-section: var(--rs-size-spacing-section-industry-mobile);
+    --blog-section: var(--rs-size-spacing-section-blog-mobile);
+    --thinking-section: var(--rs-size-spacing-section-thinking-mobile);
+    --page-meta-bar: var(--rs-size-spacing-metabar-mobile);
+    --caseStudy-meta-bar: var(--rs-size-spacing-metabar-mobile);
+    --service-meta-bar: var(--rs-size-spacing-metabar-mobile);
+    --industry-meta-bar: var(--rs-size-spacing-metabar-mobile)
+    
+   
 }
 
 @media only screen and (min-width: 1280px) {
     :root {
-        --grid-padding:8rem;
-        ${
-          "" /* --grid-column-count: var(--rs-layout-grid-columns-large);
-        --grid-gutter: var(--rs-size-grid-gutter-desktop) */
-        }
+        --grid-padding: 8rem;
+        --grid-column-count: 12;
+        --grid-gutter: 2rem;
     }
 }
   
