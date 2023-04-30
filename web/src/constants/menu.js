@@ -19,10 +19,10 @@ export const menu = [
     title: 'Our Process',
     path: '/our-process',
   },
-  {
-    title: 'Blog',
-    path: '/blog',
-  },
+  // {
+  //   title: 'Blog',
+  //   path: '/blog',
+  // },
   {
     title: 'Contact',
     path: '/contact',

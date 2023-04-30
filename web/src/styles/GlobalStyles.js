@@ -90,12 +90,6 @@ const GlobalStyles = createGlobalStyle`
     --letter-spacing-h6: -0.02em;
   }
 
-  @media only screen and (min-width: 1920px) {
-    :root {
-        --rem-base:0.5vw;
-    }
-  }
-
 @media only screen and (min-width: 1280px) {
     :root {
         --font-size-small: 1.4rem;
@@ -106,7 +100,7 @@ const GlobalStyles = createGlobalStyle`
 
 @media only screen and (min-width: 1920px) {
     :root {
-        --rem-base: 0.5vw
+        --rem-base: 0.5vw;
     }
 }
 
@@ -252,7 +246,52 @@ sup {
     list-style: none;
   }
 
+${"" /* HEADER STYLES */}
+:root {
+ --header-height: calc(1.8rem + (1.5rem + 2.5vw) * 2);
+}
 
+@media only screen and (min-width: 1280px) {
+    :root {
+        --header-height:12.8rem;
+    }
+}
+.smooth-scroll-content {
+    min-height: calc(100vh - var(--header-height) - 16rem);
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .smooth-scroll-content {
+        min-height:calc(100vh - var(--header-height) - 15.625vw);
+    }
+}
+
+main {
+    padding-top: var(--header-height);
+}
+
+:root {
+    ${
+      "" /* --grid-width: var(--rs-size-grid-width);
+    --grid-height: var(--rs-size-grid-height); */
+    }
+    --grid-padding: 5.4vw;
+    ${
+      "" /* --grid-column-count: var(--rs-layout-grid-columns-small);
+    --grid-gutter: var(--rs-size-grid-gutter-mobile) */
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    :root {
+        --grid-padding:8rem;
+        ${
+          "" /* --grid-column-count: var(--rs-layout-grid-columns-large);
+        --grid-gutter: var(--rs-size-grid-gutter-desktop) */
+        }
+    }
+}
   
 `;
 

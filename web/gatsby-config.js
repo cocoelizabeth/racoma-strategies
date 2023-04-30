@@ -19,6 +19,15 @@ module.exports = {
       options: {
         ...sanityConfig
       }
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /static/,
+          omitKeys: ['xmlnsDc', 'xmlnsCc', 'xmlnsRdf', 'xmlnsSvg', 'xmlnsSodipodi', 'xmlnsInkscape']
+        }
+      }
     }
   ],
 };

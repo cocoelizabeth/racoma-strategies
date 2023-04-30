@@ -1,15 +1,17 @@
 import React from 'react';
-import { GrTechnology } from 'react-icons/gr';
 import LogoStyles from '../styles/LogoStyles';
+import RacomaLogo from '../../static/racoma-strategies-logo-light.svg'
 
 function Logo() {
   return (
     <div>
       <LogoStyles to="/">
-        <GrTechnology />
+        <RacomaLogo />
       </LogoStyles>
     </div>
   );
 }
+
+
 
 export default Logo;

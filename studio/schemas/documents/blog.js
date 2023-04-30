@@ -52,7 +52,7 @@ export default {
       title: 'Excerpt',
       name: 'excerpt',
       type: 'normalText',
-      description: "A short description about the blog post",
+      description: 'A short description about the blog post',
     },
     {
       title: 'Blog Body',

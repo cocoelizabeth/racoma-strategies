@@ -1,45 +1,25 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
-import { Title } from '../typography/Title';
 import ParagraphText from '../typography/ParagraphText';
-import  MyPortableText from '../MyPortableText'
 import Button from '../buttons/Button';
 
-
-
 function HeroSection() {
-  const data = useStaticQuery(graphql`
-    {
-      allSanityHome {
-        nodes {
-          hero {
-            headlineText
-            _rawSubHeadlineText
-            cta
-            link
-          }
-        }
-      }
-    }
-  `);
-
-  const hero = data.allSanityHome.nodes[0].hero;
-  console.log("HERO")
-  console.log(hero)
   return (
     <HeroSectionStyles>
       <div className="container">
         <div className="hero__wrapper">
           <div className="left">
-            <Title>{hero.headlineText}</Title>
-            <MyPortableText
-              className=""
-              value={hero._rawSubHeadlineText}
-            ></MyPortableText>
-            <Button to={hero.link} tag={Link}>
-              {hero.cta}
+            <h1 className="hero__heading">
+              A Search Fund looking to acquire & operate one great business.
+            </h1>
+            <ParagraphText className="hero__text">
+              Curious about selling your business? Let’s see if we’re a good
+              match.
+            </ParagraphText>
+            <Button to="/get-an-offer" tag={Link}>
+              Primary Light
             </Button>
             <br />
             <br />

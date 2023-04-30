@@ -12,13 +12,22 @@ import featured from './documents/featured';
 // import custom objects
 import customImage from './objects/customImage';
 import richText from './objects/richText';
-import customCode from './objects/customCode';
+// import customCode from './objects/customCode';
 import normalText from './objects/normalText';
+import customSEO from './objects/customSEO';
+import heroText from './objects/home/hero';
+import textBlockCTA from './objects/textBlockCTA';
+import content from './objects/home/content';
+
+// import page documents
+import home from './pageDocuments/home';
 
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
-    // documents
+    // page documents,
+    home,
+    // blog documents
     blog,
     author,
     category,
@@ -26,7 +35,11 @@ export default createSchema({
     // objects
     customImage,
     richText,
-    customCode,
+    // customCode,
     normalText,
+    customSEO,
+    heroText,
+    textBlockCTA,
+    content,
   ]),
 });
