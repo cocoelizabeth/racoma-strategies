@@ -61,7 +61,7 @@ export default styled.header`
   .header__logo div a {
     ${"" /* width: 13.7rem; */}
     height: 1.8rem;
-  }
+  } 
 
   @media only screen and (min-width: 1280px) {
     .header__logo div a {
@@ -105,20 +105,9 @@ export default styled.header`
 
   .header__cta {
     font-size: 9px;
+    
   }
 
-  .searchIcon {
-    cursor: pointer;
-    font-size: 25px;
-    .searchIcon__wrapper {
-      border-radius: 6px;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: var(--black-2);
-    }
-  }
   .mobileMenuCloseBtn,
   .mobileNavBg,
   .mobileIcon,
@@ -126,6 +115,8 @@ export default styled.header`
   .mobileCTA {
     display: none;
   }
+
+
   @media only screen and (max-width: 1023px) {
     .mobileMenuCloseBtn,
     .mobileNavBg,
@@ -185,6 +176,11 @@ export default styled.header`
               text-decoration: none;
               text-transform: uppercase;
             }
+            &.mobileCTA a{
+              &:hover {
+              text-decoration: none;
+            } 
+            }
        
             &.searchIcon {
               display: none;
@@ -214,14 +210,14 @@ export default styled.header`
         }
       }
       .mobileNavBg {
-        z-index: 1001;
+        ${'' /* z-index: 1001;
         position: absolute;
         top: 0px;
         left: 0px;
         width: 100%;
         height: 100%;
         transition: opacity 0.6s linear 0s;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.5); */}
       }
     }
     .mobileIcon {
@@ -232,7 +228,7 @@ export default styled.header`
       justify-content: center;
     }
     .mobileMenuBtn {
-      font-size:10px;
+      font-size: var(--font-size-small);
     }
   }
     .activeNavLink {

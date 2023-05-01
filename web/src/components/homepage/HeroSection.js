@@ -26,23 +26,26 @@ function HeroSection() {
   `);
 
   const hero = data.allSanityHome.nodes[0].hero;
-  console.log("HERO")
-  console.log(hero)
+
   return (
     <HeroSectionStyles>
-      <div className="hero__wrapper">
-        <div className="headlineText h2">{hero.headlineText}</div>
-        <div className="subheadingText">
-          <MyPortableText
-            className=""
-            value={hero._rawSubHeadlineText}
-          ></MyPortableText>
-          <Button to={hero.link} tag={Link} className="heroCTA">
-            {hero.cta}
-          </Button>
+      <section>
+        <div className="hero__wrapper">
+          <div className="headlineText h2">{hero.headlineText}</div>
+          <div className="subheadingText">
+            <MyPortableText
+              className=""
+              value={hero._rawSubHeadlineText}
+            ></MyPortableText>
+            <Button to={hero.link} tag={Link} className="heroCTA">
+              {hero.cta}
+            </Button>
+          </div>
         </div>
-      </div>
-
+        <div className="lineBreakContainer">
+          {/* <div className="lineBreak"></div> */}
+        </div>
+      </section>
       {/* <div className="hero__wrapper">
         <div className="left">
           <Title>{hero.headlineText}</Title>

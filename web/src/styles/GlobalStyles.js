@@ -248,12 +248,12 @@ sup {
 
 ${"" /* HEADER STYLES */}
 :root {
- --header-height: calc(1.8rem + (1.5rem + 2.5vw) * 2);
+ --header-height: calc(32px + ((1.5rem + 2.5vw) * 2));
 }
 
 @media only screen and (min-width: 1280px) {
     :root {
-        --header-height:12.8rem;
+        ${'' /* --header-height:12.8rem; */}
     }
 }
 .smooth-scroll-content {
@@ -269,6 +269,11 @@ ${"" /* HEADER STYLES */}
 
 main {
     margin-top: var(--header-height);
+
+}
+section {
+    padding-right: var(--grid-padding);
+    padding-left: var(--grid-padding);
 }
 
 :root {

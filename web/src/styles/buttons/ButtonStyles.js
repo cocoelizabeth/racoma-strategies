@@ -34,6 +34,8 @@ export const ButtonStyles = styled(Link)`
       ? "var(--racoma-dark)"
       : variant === buttonTypes.secondaryDark
       ? "var(--racoma-teal)"
+      : variant === buttonTypes.primaryFilled
+      ? "var(--racoma-teal)"
       : "var(--racoma-light)"};
   color: ${({ variant }) =>
     variant === buttonTypes.primaryLight
@@ -43,6 +45,20 @@ export const ButtonStyles = styled(Link)`
       : variant === buttonTypes.primaryDark
       ? "var(--racoma-dark)"
       : variant === buttonTypes.secondaryDark
+      ? "var(--racoma-teal)"
+      : variant === buttonTypes.primaryFilled
+      ? "var(--racoma-light)"
+      : "var(--racoma-light)"};
+  background-color: ${({ variant }) =>
+    variant === buttonTypes.primaryLight
+      ? "var(--racoma-teal)"
+      : variant === buttonTypes.secondaryLight
+      ? "var(--racoma-light)"
+      : variant === buttonTypes.primaryDark
+      ? "var(--racoma-dark)"
+      : variant === buttonTypes.secondaryDark
+      ? "var(--racoma-dark)"
+      : variant === buttonTypes.primaryFilled
       ? "var(--racoma-teal)"
       : "var(--racoma-light)"};
   :hover:not(:disabled) {
@@ -55,16 +71,8 @@ export const ButtonStyles = styled(Link)`
         ? "var(--racoma-light)"
         : variant === buttonTypes.secondaryDark
         ? "var(--racoma-teal)"
-        : "var(--racoma-light)"};
-    color: ${({ variant }) =>
-      variant === buttonTypes.primaryLight
-        ? "var(--racoma-teal)"
-        : variant === buttonTypes.secondaryLight
-        ? "var(--racoma-light)"
-        : variant === buttonTypes.primaryDark
-        ? "var(--racoma-dark)"
-        : variant === buttonTypes.secondaryDark
-        ? "var(--racoma-dark)"
+        : variant === buttonTypes.primaryFilled
+        ? "var(--racoma-navy)"
         : "var(--racoma-light)"};
   }
 

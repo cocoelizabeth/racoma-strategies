@@ -8,11 +8,11 @@ function Layout({ children }) {
     <>
       <GlobalStyles />
       <Header />
-      <div className="smooth-scroll-content">
+      {/* <div className="smooth-scroll-content"> */}
         <main>
           {children}
         </main>
-      </div>
+      {/* </div> */}
       <Footer />
     </>
   );
