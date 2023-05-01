@@ -9,7 +9,7 @@ export const menu = [
   },
   {
     title: 'Why Us',
-    path: 'why-us',
+    path: '/why-us',
   },
   {
     title: 'Who We Are',

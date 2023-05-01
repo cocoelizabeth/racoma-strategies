@@ -11,22 +11,29 @@ import Button from './buttons/Button';
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleNavItemClick = () => {
+    debugger
     if (isNavOpen) {
       setIsNavOpen(false);
     }
   };
+
   return (
     <HeaderStyles>
       <div className="header__wrapper">
         <div className="header__background"></div>
         <div className="header__logo">
-          <Logo />
+          <Link to="/">
+            RACOMA <br /> / Strategies
+          </Link>
         </div>
+        {/* <div className="header__logo">
+          <Logo />
+        </div> */}
         <div className={clsx("nav__wrapper", isNavOpen && "open")}>
           <div className="mobileIcon">
-            <Button to="/get-an-offer" tag={Link} className="header__cta">
+            {/* <Button to="/get-an-offer" tag={Link} className="header__cta">
               GET AN OFFER
-            </Button>
+            </Button> */}
             <ActionButton
               className="mobileMenuBtn"
               onClick={() => setIsNavOpen(true)}
@@ -54,13 +61,25 @@ const Header = () => {
               <MdClose />
             </ActionButton>
             <ul>
-              {menu.map((item) => (
+              {menu.map((item, i) => (
                 <li key={item.path}>
-                  <Link to={item.path} onClick={handleNavItemClick}>
+                  <Link
+                    className="navLink"
+                    activeClassName="activeNavLink"
+                    to={item.path}
+                    key={i}
+                    onClick={handleNavItemClick}
+                  >
                     {item.title}
                   </Link>
                 </li>
+
               ))}
+                <li className="mobileCTA">
+                  <Button to="/get-an-offer" tag={Link}>
+                    GET AN OFFER
+                  </Button>
+                </li>
             </ul>
           </nav>
         </div>

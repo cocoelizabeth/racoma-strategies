@@ -48,9 +48,14 @@ export const HeroSectionStyles = styled.div`
       display: block;
       line-height: 1.1;
       letter-spacing: -0.035em;
-      margin-top: 4rem;
+      ${'' /* margin-top: 4rem; */}
+       margin-top: var(--grid-padding);
       text-transform: none;
       font-size: 3.2rem;
+  }
+
+  .heroCTA {
+    margin-top: calc(var(--grid-gutter)*2)
   }
 
   @media only screen and (min-width: 1280px) {

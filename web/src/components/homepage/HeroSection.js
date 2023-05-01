@@ -37,7 +37,7 @@ function HeroSection() {
             className=""
             value={hero._rawSubHeadlineText}
           ></MyPortableText>
-          <Button to={hero.link} tag={Link}>
+          <Button to={hero.link} tag={Link} className="heroCTA">
             {hero.cta}
           </Button>
         </div>

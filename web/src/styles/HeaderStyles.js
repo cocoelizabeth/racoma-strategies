@@ -9,11 +9,20 @@ export default styled.header`
   overflow: hidden;
   transition: background 0.3s ease-in-out;
   will-change: transform;
+
+  .header__logo {
+    font-family: SctoGroteskA;
+    font-weight: bold;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+
+  }
   .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -88,7 +97,7 @@ export default styled.header`
           vertical-align: middle;
           font-size: var(--font-size-small);
           text-transform: uppercase;
-          font-size: 10px;
+          ${"" /* font-size: 10px; */}
         }
       }
     }
@@ -113,16 +122,19 @@ export default styled.header`
   .mobileMenuCloseBtn,
   .mobileNavBg,
   .mobileIcon,
-  .mobileMenuBtn {
+  .mobileMenuBtn,
+  .mobileCTA {
     display: none;
   }
   @media only screen and (max-width: 1023px) {
     .mobileMenuCloseBtn,
     .mobileNavBg,
     .mobileIcon,
-    .mobileMenuBtn {
+    .mobileMenuBtn,
+    .mobileCTA {
       display: initial;
     }
+    
     .header__wrapper .header__cta.desktop {
       display: none;
     }
@@ -145,6 +157,14 @@ export default styled.header`
           ${"" /* width: 90%; */}
           margin: 0 auto;
           flex-direction: column;
+          align-items: flex-start;
+          height: 100%;
+          justify-content: flex-start;
+          top:0;
+          margin-top: 300px;
+          margin-left: 0;
+          padding-right: var(--grid-padding);
+          padding-left: var(--grid-padding);
           li {
             display: block;
             margin: 0.5rem 0;
@@ -152,24 +172,29 @@ export default styled.header`
               a {
               }
             }
-            a {
+            a.navLink {
               width: 100%;
               padding: 0.5rem 1rem;
-              border-radius: 4px;
               display: inline-block;
               position: relative;
-              left: -1rem;
+              ${"" /* left: -1rem; */}
               padding: .5rem 1rem;
               font-weight: var(--font-weight-bold);
-              font-size: 1.8rem;
+              font-size: 3rem;
               line-height: 1;
               text-decoration: none;
-              text-transform: uppercase
+              text-transform: uppercase;
             }
+       
             &.searchIcon {
               display: none;
             }
           }
+        }
+        li.mobileCTA {
+           
+              margin-top: var(--grid-gutter);
+         
         }
         .mobileMenuCloseBtn {
           color: var(--racoma-light);
@@ -210,4 +235,10 @@ export default styled.header`
       font-size:10px;
     }
   }
+    .activeNavLink {
+     text-decoration: underline !important;
+      text-underline-offset: .4rem;
+  }
+
+
 `;
