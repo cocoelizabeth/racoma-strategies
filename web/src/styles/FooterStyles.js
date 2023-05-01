@@ -1,9 +1,43 @@
 import styled from 'styled-components';
 
 export const FooterStyles = styled.footer`
-  padding: 5rem 0 2rem 0;
-  text-align: center;
-  background-color: var(--racoma-teal);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: left;
+  background-color: var(--racoma-dark);
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--page-intro-small)
+    padding-bottom: 12rem;
+    width: 100%;
+  }
+  .footer__logo {
+    height: 100%;
+    position: relative;
+    font-family: SctoGroteskA;
+    font-weight: bold;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  @media only screen and (min-width: 720px) {
+    .footer__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      ${
+        "" /* padding-top: 12rem;
+      padding-bottom: 12rem; */
+      }
+    }
+  }
+
+  .header__logo div a {
+    ${"" /* width: 13.7rem; */}
+    height: 1.8rem;
+  }
   .footer__text {
     margin: 0 auto;
     margin-top: 1rem;

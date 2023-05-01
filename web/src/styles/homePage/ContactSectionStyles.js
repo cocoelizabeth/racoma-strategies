@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactSectionStyles = styled.div`
-  background-color: var(--racoma-dark);
+  background-color: var(--racoma-teal);
   color: var(--racoma-light);
   padding-top: var(--page-intro-small);
   padding-bottom: var(--page-section);
@@ -32,6 +32,9 @@ export const ContactSectionStyles = styled.div`
       }
       .textWrapper {
         width: 66%;
+        p:first-of-type{
+            margin-top: 0px;
+        }
       }
     }
   }

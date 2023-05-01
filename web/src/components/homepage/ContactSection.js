@@ -46,7 +46,7 @@ function ContactSection() {
           <div className="h3 textWrapper">
             <MyPortableText value={contact._rawSubText} className="h3"></MyPortableText>
             <p className="contactSection__cta">
-              <Button to={contact.link} tag={Link} variant="primaryFilled">
+              <Button to={contact.link} tag={Link} variant="primaryLight">
                 {contact.cta}
               </Button>
             </p>
