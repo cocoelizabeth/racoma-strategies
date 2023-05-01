@@ -63,8 +63,6 @@ function ContentSection() {
       )
     })
 
-    console.log(contentBlockItems)
-
   return (
     <ContentSectionStyles>
       <section>
