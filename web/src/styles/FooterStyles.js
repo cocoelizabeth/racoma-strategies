@@ -181,7 +181,6 @@ export const FooterStyles = styled.footer`
     .footer__logo {
       height: 100%;
       position: relative;
-      font-family: SctoGroteskA;
       font-weight: bold;
       line-height: 1.6rem;
       text-transform: uppercase;

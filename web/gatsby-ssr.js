@@ -5,7 +5,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <link
       rel="preload"
-      href="/static/fonts/SctoGroteskA-Bold.d6497298.woff2"
+      href="/fonts/SctoGroteskA-Bold.d6497298.woff2"
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"
@@ -13,7 +13,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
-      href="/static/fonts/SctoGroteskA-Medium.2ede3563.woff2"
+      href="/fonts/SctoGroteskA-Medium.2ede3563.woff2"
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"
@@ -21,7 +21,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
-      href="/static/fonts/SctoGroteskA-Regular.1e986128.woff2"
+      href="/fonts/SctoGroteskA-Regular.1e986128.woff2"
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"
