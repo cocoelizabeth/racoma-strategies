@@ -4,38 +4,21 @@ export const ContactSectionStyles = styled.div`
   background-color: var(--racoma-teal);
   color: var(--racoma-light);
   padding-top: var(--page-intro-small);
-  padding-bottom: var(--page-section);
-  padding-top: var(--page-section);
-
+  padding-bottom: var(--page-intro-small);
   .contactSection__wrapper {
     display: flex;
+    border-top: 1px solid var(--racoma-teal);
     flex-direction: column;
-    ${"" /* justify-content: space-between; */}
     width: 100%;
     .headingWrapper {
       width: 100%;
-    }
-    .textWrapper {
-      width: 100%;
-      p:first-of-type {
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+      .h2 {
+        margin-bottom: 3rem;
       }
+    }
+    .contactSection__cta {
+      margin-top: 3rem;
     }
   }
 
-  @media only screen and (min-width: 720px) {
-    .contactSection__wrapper {
-      flex-direction: row;
-      .headingWrapper {
-        width: 33%;
-      }
-      .textWrapper {
-        width: 66%;
-        p:first-of-type{
-            margin-top: 0px;
-        }
-      }
-    }
-  }
 `;

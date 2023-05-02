@@ -81,7 +81,7 @@ function ContentSection() {
             <Button
               to={content.excerpt1.link}
               tag={Link}
-              variant="primaryFilled"
+              variant="secondaryLight"
             >
               {content.excerpt1.cta}
             </Button>
@@ -96,7 +96,7 @@ function ContentSection() {
             <Button
               to={content.excerpt2.link}
               tag={Link}
-              variant="primaryFilled"
+              variant="secondaryLight"
             >
               {content.excerpt2.cta}
             </Button>
@@ -111,7 +111,7 @@ function ContentSection() {
             <Button
               to={content.excerpt3.link}
               tag={Link}
-              variant="primaryFilled"
+              variant="secondaryLight"
             >
               {content.excerpt3.cta}
             </Button>
@@ -126,7 +126,7 @@ function ContentSection() {
             <Button
               to={content.excerpt4.link}
               tag={Link}
-              variant="primaryFilled"
+              variant="secondaryLight"
             >
               {content.excerpt4.cta}
             </Button>

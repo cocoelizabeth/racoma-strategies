@@ -65,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
     --letter-spacing-large: -0.04em;
     --font-family: 'SctoGroteskA', Arial;
     --font-size-h1: 4rem;
-    --font-size-h2: 4.2rem;
+    --font-size-h2: 2.4rem;
     --font-size-h3: 2.2rem;
     --font-size-h4: 2rem;
     --font-size-h5: 1.8rem;
@@ -253,7 +253,7 @@ ${"" /* HEADER STYLES */}
 
 @media only screen and (min-width: 1280px) {
     :root {
-        ${'' /* --header-height:12.8rem; */}
+        ${"" /* --header-height:12.8rem; */}
     }
 }
 .smooth-scroll-content {
@@ -277,33 +277,11 @@ section {
 }
 
 :root {
-    
     --grid-width: 100vw;
     --grid-height: 100vh;
     --grid-padding: 5.4vw;
     --grid-column-count: 6;
     --grid-gutter:  1.6rem;
-
-    --ease-out: cubic-bezier(0.28,0.44,0.49,1);
-    --bounce: cubic-bezier(0.6,0,0.1,1.4);
-    --ease-out-soft: cubic-bezier(0.28,0,0.49,1);
-    --ease-in-out-soft: cubic-bezier(0.72,0,0.28,1);
-    --ease-in-out-hard: cubic-bezier(0.77,0,0.175,1);
-    --ease-garret: cubic-bezier(0.5,0,0,1);
-    --page-intro-small: 6rem;
-    --page-intro-large: var(--rs-size-spacing-section-intro-lg-mobile);
-    --page-section: 12.5vw;
-    --caseStudy-section: var(--rs-size-spacing-section-casestudy-mobile);
-    --service-section: var(--rs-size-spacing-section-service-mobile);
-    --industry-section: var(--rs-size-spacing-section-industry-mobile);
-    --blog-section: var(--rs-size-spacing-section-blog-mobile);
-    --thinking-section: var(--rs-size-spacing-section-thinking-mobile);
-    --page-meta-bar: var(--rs-size-spacing-metabar-mobile);
-    --caseStudy-meta-bar: var(--rs-size-spacing-metabar-mobile);
-    --service-meta-bar: var(--rs-size-spacing-metabar-mobile);
-    --industry-meta-bar: var(--rs-size-spacing-metabar-mobile)
-    
-   
 }
 
 @media only screen and (min-width: 1280px) {
@@ -311,12 +289,204 @@ section {
         --grid-padding: 8rem;
         --grid-column-count: 12;
         --grid-gutter: 2rem;
-
         --page-intro-small:4.1vw;
         --page-section: 12.5vw;
          
     }
 }
+
+@keyframes fade-in{
+    0%{
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+@keyframes fade-out{
+    0%{
+        opacity:1
+    }
+    to{
+        opacity:0
+    }
+}
+@keyframes push-arrow{
+    50%{
+        transform:translateX(100%)
+    }
+    50.1%{
+        transform:translateX(-100%)
+    }
+    0%{
+        transform:none
+    }
+}
+@keyframes translate-up-0{
+    0%{
+        transform:translateY(100%)
+    }
+    to{
+        transform:translateY(0)
+    }
+}
+@keyframes translate-up-25{
+    0%{
+        transform:translateY(25%)
+    }
+    to{
+        transform:translateY(0)
+    }
+}
+@keyframes translate-up-0-masked{
+    0%{
+        transform:translateY(103%)
+    }
+    to{
+        transform:translateY(0)
+    }
+}
+@keyframes translate-up-100{
+    0%{
+        transform:translateY(0)
+    }
+    to{
+        transform:translateY(-100%)
+    }
+}
+@keyframes translate-down-0{
+    0%{
+        transform:translateY(-100%)
+    }
+    to{
+        transform:translateY(0)
+    }
+}
+@keyframes translate-down-100{
+    0%{
+        transform:translateY(0)
+    }
+    to{
+        transform:translateY(100%)
+    }
+}
+@keyframes scale-in{
+    0%{
+        transform:scaleX(0);
+        transform-origin:left
+    }
+    to{
+        transform:scaleX(1);
+        transform-origin:left
+    }
+}
+@keyframes scale-out{
+    0%{
+        transform:scaleX(1);
+        transform-origin:right
+    }
+    to{
+        transform:scaleX(0);
+        transform-origin:right
+    }
+}
+@keyframes trace-in{
+    0%{
+        transform:translate3d(-101%,0,0)
+    }
+    to{
+        transform:translateZ(0)
+    }
+}
+@keyframes trace-out{
+    0%{
+        transform:translateZ(0)
+    }
+    to{
+        transform:translate3d(101%,0,0)
+    }
+}
+@keyframes wipe-in{
+    0%{
+        transform:scale(1.75) translateX(-100%)
+    }
+    to{
+        transform:scale(1) translateX(0)
+    }
+}
+@keyframes wipe-out{
+    0%{
+        transform:scale(1) translateX(0)
+    }
+    to{
+        transform:scale(1.75) translateX(100%)
+    }
+}
+@keyframes wipe-in-up{
+    0%{
+        transform:scale(1.75) translateX(100%)
+    }
+    to{
+        transform:scale(1) translateX(0)
+    }
+}
+@keyframes wipe-out-up{
+    0%{
+        transform:scale(1) translateX(0)
+    }
+    to{
+        transform:scale(1.75) translateX(-100%)
+    }
+}
+@keyframes overlay-slide-left{
+    0%{
+        transform:translateX(calc(calc(((var(--grid-width) + var(--grid-gutter) - var(--grid-padding) * 2) / var(--grid-column-count) * 8) - 0rem) + var(--grid-padding)))
+    }
+    to{
+        transform:translateX(0)
+    }
+}
+:root {
+    --ease-out: cubic-bezier(0.28,0.44,0.49,1);
+    --bounce: cubic-bezier(0.6,0,0.1,1.4);
+    --ease-out-soft: cubic-bezier(0.28,0,0.49,1);
+    --ease-in-out-soft: cubic-bezier(0.72,0,0.28,1);
+    --ease-in-out-hard: cubic-bezier(0.77,0,0.175,1);
+    --ease-garret: cubic-bezier(0.5,0,0,1);
+    --page-intro-small: 6rem;
+    --page-intro-large:  6rem;;
+    --page-section: 12.5vw;
+    --caseStudy-section: 14rem;
+    --service-section: 8rem;
+    --industry-section: 8rem;
+    --blog-section: 10.4vw;
+    --thinking-section: 12.5vw;
+    --page-meta-bar: 6rem;
+    --caseStudy-meta-bar: 6rem;
+    --service-meta-bar: 6rem;
+    --industry-meta-bar: 6rem
+    
+}
+
+@media only screen and (min-width: 1280px) {
+    :root {
+        --page-intro-small:4.1vw;
+        --page-intro-large:7.8vw;
+        --page-section:12.5vw;
+        --caseStudy-section:18.2vw;
+        --service-section:10.4vw;
+        --industry-section:10.4vw;
+        --blog-section:10.4vw;
+        --thinking-section:12.5vw;
+        --page-meta-bar:8.5rem;
+        --caseStudy-meta-bar:8.5rem;
+        --service-meta-bar:8.5rem;
+        --industry-meta-bar:8.5rem
+         
+    }
+}
+
+
   
 `;
 
