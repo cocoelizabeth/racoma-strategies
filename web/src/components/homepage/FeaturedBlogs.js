@@ -1,9 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { FeaturedBlogsStyles } from '../../styles/homePage/FeaturedBlogsStyles'
+import { FeaturedBlogsStyles } from '../../styles/homePage/FeaturedBlogsStyles';
 import { SectionTitle } from '../typography/Title';
 import ParagraphText from '../typography/ParagraphText';
 import BlogGrid from '../blog/BlogGrid';
+
 function FeaturedBlogs() {
   const data = useStaticQuery(graphql`
     {
@@ -33,17 +34,18 @@ function FeaturedBlogs() {
       }
     }
   `);
-  
+
   const featuredBlogs = data.allSanityFeatured.nodes[0].blogs;
 
   return (
     <FeaturedBlogsStyles>
       <SectionTitle>Featured Blogs</SectionTitle>
-      <ParagraphText className="featuredBlogs__text">Ldkljsdlfjsdkfsldfksdfdls</ParagraphText>
+      <ParagraphText className="featuredBlogs__text">
+        Ldkljsdlfjsdkfsldfksdfdls
+      </ParagraphText>
       <BlogGrid blogs={featuredBlogs} />
     </FeaturedBlogsStyles>
   );
-
 }
 
 export default FeaturedBlogs;

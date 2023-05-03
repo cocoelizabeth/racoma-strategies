@@ -17,14 +17,14 @@ export const HeroSectionStyles = styled.div`
   .headlineText {
     text-transform: uppercase;
     width: 100%;
-    ${"" /* font-size: 3.2rem !important; */}
+    ${'' /* font-size: 3.2rem !important; */}
   }
 
   .subheadingText {
     display: block;
     line-height: 1.1;
     letter-spacing: -0.035em;
-    ${"" /* margin-top: 4rem; */}
+    ${'' /* margin-top: 4rem; */}
     margin-top: var(--grid-padding);
     text-transform: none;
     font-size: 3.2rem;
@@ -37,11 +37,11 @@ export const HeroSectionStyles = styled.div`
 
   .lineBreakContainer {
     width: 100%;
-    height: calc(var(--page-section)*2);
+    height: calc(var(--page-section) * 2);
     display: flex;
     align-content: center;
     justify-content: center;
-     .lineBreak {
+    .lineBreak {
       height: 1px;
       width: 100%;
       background-color: var(--racoma-light);
@@ -62,7 +62,7 @@ export const HeroSectionStyles = styled.div`
       padding-left: 50%;
     }
     .lineBreakContainer {
-      height: calc(var(--page-section))
+      height: calc(var(--page-section));
     }
   }
 `;

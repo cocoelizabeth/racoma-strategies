@@ -1,13 +1,8 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
-import { Title } from '../typography/Title';
-import ParagraphText from '../typography/ParagraphText';
-import  MyPortableText from '../MyPortableText'
+import MyPortableText from '../MyPortableText';
 import Button from '../buttons/Button';
-
-
 
 function HeroSection() {
   const data = useStaticQuery(graphql`
@@ -25,7 +20,7 @@ function HeroSection() {
     }
   `);
 
-  const hero = data.allSanityHome.nodes[0].hero;
+  const { hero } = data.allSanityHome.nodes[0];
 
   return (
     <HeroSectionStyles>
@@ -33,10 +28,7 @@ function HeroSection() {
         <div className="hero__wrapper">
           <div className="headlineText h2">{hero.headlineText}</div>
           <div className="subheadingText">
-            <MyPortableText
-              className=""
-              value={hero._rawSubHeadlineText}
-            ></MyPortableText>
+            <MyPortableText className="" value={hero._rawSubHeadlineText} />
             <Button to={hero.link} tag={Link} className="heroCTA">
               {hero.cta}
             </Button>

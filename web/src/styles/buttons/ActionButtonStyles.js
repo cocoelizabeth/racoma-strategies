@@ -18,7 +18,7 @@ export default styled.div`
     pointer-events: none;
   }
   &:hover {
-    color:white;;
+    color: white;
   }
   @media only screen and (max-width: 768px) {
     padding: 0.5rem;

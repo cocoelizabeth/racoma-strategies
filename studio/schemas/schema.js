@@ -18,15 +18,19 @@ import customSEO from './objects/customSEO';
 import heroText from './objects/home/hero';
 import textBlockCTA from './objects/textBlockCTA';
 import content from './objects/home/content';
+import criteriaLists from './objects/whatWeLookFor/criteriaLists';
+import textBlock from './objects/textBlock';
 
 // import page documents
 import home from './pageDocuments/home';
+import whatWeLookFor from './pageDocuments/whatWeLookFor';
 
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
     // page documents,
     home,
+    whatWeLookFor,
     // blog documents
     blog,
     author,
@@ -41,5 +45,7 @@ export default createSchema({
     heroText,
     textBlockCTA,
     content,
+    textBlock,
+    criteriaLists,
   ]),
 });

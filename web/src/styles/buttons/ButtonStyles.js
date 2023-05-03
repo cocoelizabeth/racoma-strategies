@@ -27,70 +27,70 @@ export const ButtonStyles = styled(Link)`
   border: 0.1rem solid;
   border-color: ${({ variant }) =>
     variant === buttonTypes.primaryLight
-      ? "var(--racoma-light)"
+      ? 'var(--racoma-light)'
       : variant === buttonTypes.secondaryLight
-      ? "var(--racoma-teal)"
+      ? 'var(--racoma-teal)'
       : variant === buttonTypes.primaryDark
-      ? "var(--racoma-navy)"
+      ? 'var(--racoma-navy)'
       : variant === buttonTypes.secondaryDark
-      ? "var(--racoma-teal)"
+      ? 'var(--racoma-teal)'
       : variant === buttonTypes.primaryFilled
-      ? "var(--racoma-teal)"
-      : "var(--racoma-light)"};
+      ? 'var(--racoma-teal)'
+      : 'var(--racoma-light)'};
   color: ${({ variant }) =>
     variant === buttonTypes.primaryLight
-      ? "var(--racoma-light)"
+      ? 'var(--racoma-light)'
       : variant === buttonTypes.secondaryLight
-      ? "var(--racoma-teal)"
+      ? 'var(--racoma-teal)'
       : variant === buttonTypes.primaryDark
-      ? "var(--racoma-dark)"
+      ? 'var(--racoma-dark)'
       : variant === buttonTypes.secondaryDark
-      ? "var(--racoma-teal)"
+      ? 'var(--racoma-teal)'
       : variant === buttonTypes.primaryFilled
-      ? "var(--racoma-teal)"
-      : "var(--racoma-light)"};
+      ? 'var(--racoma-teal)'
+      : 'var(--racoma-light)'};
   background-color: ${({ variant }) =>
     variant === buttonTypes.primaryLight
-      ? "var(--racoma-teal)"
+      ? 'var(--racoma-teal)'
       : variant === buttonTypes.secondaryLight
-      ? "var(--racoma-light)"
+      ? 'var(--racoma-light)'
       : variant === buttonTypes.primaryDark
-      ? "var(--racoma-teal)"
+      ? 'var(--racoma-teal)'
       : variant === buttonTypes.secondaryDark
-      ? "var(--racoma-dark)"
+      ? 'var(--racoma-dark)'
       : variant === buttonTypes.primaryFilled
-      ? "var(--racoma-light)"
-      : "var(--racoma-light)"};
+      ? 'var(--racoma-light)'
+      : 'var(--racoma-light)'};
   :hover:not(:disabled) {
     background-color: ${({ variant }) =>
       variant === buttonTypes.primaryLight
-        ? "var(--racoma-light)"
+        ? 'var(--racoma-light)'
         : variant === buttonTypes.secondaryLight
-        ? "var(--racoma-teal)"
+        ? 'var(--racoma-teal)'
         : variant === buttonTypes.primaryDark
-        ? "var(--racoma-light)"
+        ? 'var(--racoma-light)'
         : variant === buttonTypes.secondaryDark
-        ? "var(--racoma-teal)"
+        ? 'var(--racoma-teal)'
         : variant === buttonTypes.primaryFilled
-        ? "var(--racoma-navy)"
-        : "var(--racoma-light)"};
+        ? 'var(--racoma-navy)'
+        : 'var(--racoma-light)'};
     color: ${({ variant }) =>
       variant === buttonTypes.primaryLight
-        ? "var(--racoma-teal)"
+        ? 'var(--racoma-teal)'
         : variant === buttonTypes.secondaryLight
-        ? "var(--racoma-light)"
+        ? 'var(--racoma-light)'
         : variant === buttonTypes.primaryDark
-        ? "var(--racoma-dark)"
+        ? 'var(--racoma-dark)'
         : variant === buttonTypes.secondaryDark
-        ? "var(--racoma-dark)"
+        ? 'var(--racoma-dark)'
         : variant === buttonTypes.primaryFilled
-        ? "var(--racoma-light)"
-        : "var(--racoma-light)"};
+        ? 'var(--racoma-light)'
+        : 'var(--racoma-light)'};
   }
 
   @media only screen and (max-width: 768px) {
     ${
-      "" /* padding: 0.8rem 1.2rem;
+      '' /* padding: 0.8rem 1.2rem;
     font-size: 1.4rem; */
     }
   }

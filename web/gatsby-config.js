@@ -1,5 +1,5 @@
 require('dotenv').config('./.env');
-const sanityConfig = require("./sanity-config");
+const sanityConfig = require('./sanity-config');
 
 module.exports = {
   siteMetadata: {
@@ -17,17 +17,24 @@ module.exports = {
     {
       resolve: 'gatsby-source-sanity',
       options: {
-        ...sanityConfig
-      }
+        ...sanityConfig,
+      },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /static/,
-          omitKeys: ['xmlnsDc', 'xmlnsCc', 'xmlnsRdf', 'xmlnsSvg', 'xmlnsSodipodi', 'xmlnsInkscape']
-        }
-      }
-    }
+          omitKeys: [
+            'xmlnsDc',
+            'xmlnsCc',
+            'xmlnsRdf',
+            'xmlnsSvg',
+            'xmlnsSodipodi',
+            'xmlnsInkscape',
+          ],
+        },
+      },
+    },
   ],
 };

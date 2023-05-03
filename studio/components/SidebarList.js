@@ -1,6 +1,6 @@
-import { MdStar, MdHome } from 'react-icons/md';
+import { MdStar, MdHome, MdPerson } from 'react-icons/md';
+import { GrSearch } from 'react-icons/gr';
 import S from '@sanity/desk-tool/structure-builder';
-import featured from '../schemas/documents/featured';
 
 // create a separate folder for blog, don't include featured in blog folder because we want it to be structured differently
 const blogFolderNames = ['blog', 'author', 'category'];
@@ -36,6 +36,13 @@ function SidebarList() {
         .id('home')
         .icon(MdHome)
         .child(S.editor().schemaType('home').documentId('home')),
+      S.listItem()
+        .title('What We Look For')
+        .id('whatWeLookFor')
+        .icon(GrSearch)
+        .child(
+          S.editor().schemaType('whatWeLookFor').documentId('whatWeLookFor')
+        ),
       S.listItem()
         .title('Blog')
         .child(

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContactSectionStyles = styled.div`
   background-color: var(--racoma-teal);
@@ -20,5 +20,4 @@ export const ContactSectionStyles = styled.div`
       margin-top: 3rem;
     }
   }
-
 `;

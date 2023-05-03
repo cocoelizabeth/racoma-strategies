@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContentSectionStyles = styled.div`
   background-color: var(--racoma-light);
@@ -31,9 +31,9 @@ export const ContentSectionStyles = styled.div`
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "heading1 heading2"
-        "body1 body2"
-        "cta1 cta2";
+        'heading1 heading2'
+        'body1 body2'
+        'cta1 cta2';
       grid-column-gap: calc(var(--grid-gutter) * 2);
       column-gap: calc(var(--grid-gutter) * 8);
       border-top: 1px solid var(--racoma-teal);
@@ -88,7 +88,6 @@ export const ContentSectionStyles = styled.div`
     }
   }
 `;
-
 
 // import styled from "styled-components";
 

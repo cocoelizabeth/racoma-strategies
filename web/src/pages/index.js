@@ -12,10 +12,9 @@ const IndexPage = () => (
     <HeroSection />
     <ContentSection />
     <ContactSection />
-{/*     
+    {/*     
       <FeaturedBlogs />
       <TopCategories /> */}
-    
   </>
 );
 

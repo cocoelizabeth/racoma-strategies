@@ -3,8 +3,8 @@ import { Link } from 'gatsby';
 
 export default styled(Link)`
   display: inline-block;
-  
+
   svg {
-   display: block;
+    display: block;
   }
 `;

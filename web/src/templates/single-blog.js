@@ -1,48 +1,47 @@
-import React from 'react'
-import { graphql } from 'gatsby';
-import { SingleBlogStyles } from'../styles/blog/SingleBlogStyles'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { format } from 'date-fns';
+import { FiCalendar, FiUser } from 'react-icons/fi';
+import { BiCategory } from 'react-icons/bi';
+import { SingleBlogStyles } from '../styles/blog/SingleBlogStyles';
 import { Title } from '../components/typography/Title';
 import SEO from '../components/SEO';
 import PageSpace from '../components/PageSpace';
 import MyPortableText from '../components/MyPortableText';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import ParagraphText from '../components/typography/ParagraphText';
-import { format } from 'date-fns';
-import { FiCalendar, FiUser } from 'react-icons/fi'
-import { BiCategory } from 'react-icons/bi'
-import { Link } from 'gatsby'
 
 export const postQuery = graphql`
-    query SingleBlogQuery($id: String!) {
-        sanityBlog(id: { eq: $id}){
-            title
-            publishedAt
-            _rawBody
-            coverImage{
-                alt
-                asset {
-                    gatsbyImageData
-                }
-            }
-            categories {
-                title
-                slug {
-                    current
-                }
-            }
-            author {
-                name
-                slug {
-                    current
-                }
-            }
+  query SingleBlogQuery($id: String!) {
+    sanityBlog(id: { eq: $id }) {
+      title
+      publishedAt
+      _rawBody
+      coverImage {
+        alt
+        asset {
+          gatsbyImageData
         }
+      }
+      categories {
+        title
+        slug {
+          current
+        }
+      }
+      author {
+        name
+        slug {
+          current
+        }
+      }
     }
-`
+  }
+`;
 
 function SingleBlog({ data }) {
-    const blog = data.sanityBlog;
-        
+  const blog = data.sanityBlog;
+
   return (
     <SingleBlogStyles>
       <SEO title={blog.title} />
@@ -57,7 +56,7 @@ function SingleBlog({ data }) {
             <Title className="title">{blog.title}</Title>
             <ParagraphText className="publishedAt">
               <FiCalendar />
-              {format(new Date(blog.publishedAt), "p, MMM dd yyyy")}
+              {format(new Date(blog.publishedAt), 'p, MMM dd yyyy')}
             </ParagraphText>
             <ParagraphText className="categoriesText">
               <BiCategory />
@@ -67,7 +66,7 @@ function SingleBlog({ data }) {
                     <Link to={`/categories/${item.slug.current}`}>
                       {item.title}
                     </Link>
-                    {index < blog.categories.length - 1 ? ", " : ""}
+                    {index < blog.categories.length - 1 ? ', ' : ''}
                   </span>
                 ))}
               </span>
@@ -80,9 +79,7 @@ function SingleBlog({ data }) {
             </ParagraphText>
             <hr className="hr" />
             <div className="body">
-              <MyPortableText value={blog._rawBody}>
-
-              </MyPortableText>
+              <MyPortableText value={blog._rawBody} />
             </div>
           </div>
         </div>
@@ -91,4 +88,4 @@ function SingleBlog({ data }) {
   );
 }
 
-export default SingleBlog
+export default SingleBlog;

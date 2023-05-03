@@ -9,9 +9,7 @@ function Layout({ children }) {
       <GlobalStyles />
       <Header />
       {/* <div className="smooth-scroll-content"> */}
-        <main>
-          {children}
-        </main>
+      <main>{children}</main>
       {/* </div> */}
       <Footer />
     </>
