@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export default styled.header`
   width: 100%;
   position: fixed;
@@ -22,8 +21,8 @@ export default styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
+  
+}
   .header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -62,14 +61,14 @@ export default styled.header`
 
   .header__logo div a,
   .header__logoDummy div a {
-    ${'' /* width: 13.7rem; */}
+    ${"" /* width: 13.7rem; */}
     height: 1.8rem;
   } 
 
   @media only screen and (min-width: 1280px) {
     .header__logo div a,
     .header__logoDummy div a {
-      ${'' /* width: 16rem; */}
+      ${"" /* width: 16rem; */}
       height: 2.2rem;
     }
   }
@@ -103,12 +102,12 @@ export default styled.header`
       list-style: none;
       align-items: center;
       justify-content: center;
-      ${'' /* gap: 1rem; */}
+      ${"" /* gap: 1rem; */}
       li {
             padding: 0 1.5rem;
         &:hover {
           a {
-            ${'' /* border-bottom: 1px solid var(--racoma-light); */}
+            ${"" /* border-bottom: 1px solid var(--racoma-light); */}
             text-decoration: underline;
             text-underline-offset: .4rem;
           }
@@ -121,7 +120,7 @@ export default styled.header`
           vertical-align: middle;
           font-size: var(--font-size-small);
           text-transform: uppercase;
-          ${'' /* font-size: 10px; */}
+          ${"" /* font-size: 10px; */}
         }
       }
     }
@@ -159,7 +158,7 @@ export default styled.header`
         position: fixed;
         top: 0;
         right: 0;
-        ${'' /* width: 80%; */}
+        ${"" /* width: 80%; */}
         width: 100%;
         transform: translateX(100%);
         background-color: var(--racoma-teal);
@@ -169,7 +168,7 @@ export default styled.header`
         justify-content: center;
         transition: 0.3s ease transform;
         ul {
-          ${'' /* width: 90%; */}
+          ${"" /* width: 90%; */}
           margin: 0 auto;
           flex-direction: column;
           align-items: flex-start;
@@ -197,7 +196,7 @@ export default styled.header`
               padding-left: 0;
               display: inline-block;
               position: relative;
-              ${'' /* left: -1rem; */}
+              ${"" /* left: -1rem; */}
     
               font-weight: var(--font-weight-bold);
               font-size: 3rem;
@@ -240,7 +239,7 @@ export default styled.header`
       }
       .mobileNavBg {
         ${
-          '' /* z-index: 1001;
+          "" /* z-index: 1001;
         position: absolute;
         top: 0px;
         left: 0px;

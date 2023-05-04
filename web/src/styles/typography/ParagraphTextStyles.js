@@ -5,6 +5,7 @@ export const ParagraphTextStyles = styled.p`
   color: var(--grey);
   font-size: 1.6rem;
   line-height: 1.5; */}
+
   @media only screen and (max-width: 768px) {
     ${'' /* font-size: 1.4rem; */}
   }
