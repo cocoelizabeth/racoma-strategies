@@ -336,7 +336,7 @@ section {
         opacity:0
     }
     50%{
-        opacity: 0
+        opacity: 0;
     }
     to{
         opacity:1
