@@ -4173,7 +4173,7 @@ main>section:first-of-type {
     letter-spacing: -.02em;
     text-transform: uppercase;
     flex: 1 1;
-    font-size: 1rem
+    font-size: 1rem;
 }
 
 @media only screen and (min-width: 1280px) {

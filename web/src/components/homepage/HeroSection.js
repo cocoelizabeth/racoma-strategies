@@ -26,9 +26,17 @@ function HeroSection() {
     <HeroSectionStyles>
       <section>
         <div className="hero__wrapper">
-          <div className="headlineText h2">{hero.headlineText}</div>
+          <div className="headlineText h2"></div>
+          {/* <div className="headlineText h2">
+            <h1>{hero.headlineText}</h1>
+          </div> */}
+
           <div className="subheadingText">
-            <MyPortableText className="" value={hero._rawSubHeadlineText} />
+            <MyPortableText
+              className="subheadingText__text"
+              value={hero._rawSubHeadlineText}
+            />
+            <span className="placeholder"></span>
             <Button to={hero.link} tag={Link} className="heroCTA">
               {hero.cta}
             </Button>

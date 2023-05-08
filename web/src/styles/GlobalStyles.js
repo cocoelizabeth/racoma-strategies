@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+
   *{
     margin: 0;
     padding: 0;
@@ -246,14 +247,14 @@ sup {
     list-style: none;
   }
 
-${'' /* HEADER STYLES */}
+${"" /* HEADER STYLES */}
 :root {
  --header-height: calc(32px + ((1.5rem + 2.5vw) * 2));
 }
 
 @media only screen and (min-width: 1280px) {
     :root {
-        ${'' /* --header-height:12.8rem; */}
+        ${"" /* --header-height:12.8rem; */}
     }
 }
 .smooth-scroll-content {
@@ -295,9 +296,47 @@ section {
     }
 }
 
+@keyframes slideInFromRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight-delay-5s {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    50% {
+        -webkit-transform: translateX(99%);
+        transform: translateX(99%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
 @keyframes fade-in{
     0%{
         opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+
+@keyframes fade-in-delay-5s{
+    0%{
+        opacity:0
+    }
+    50%{
+        opacity: 0
     }
     to{
         opacity:1

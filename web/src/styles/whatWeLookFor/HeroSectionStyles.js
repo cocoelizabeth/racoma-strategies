@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HeroSectionStyles = styled.div`
+.
+
   margin-top: 0;
   background-color: var(--racoma-teal);
   color: var(--racoma-light);
@@ -21,14 +23,13 @@ export const HeroSectionStyles = styled.div`
   .headlineText {
     text-transform: uppercase;
     width: 100%;
-    ${"" /* font-size: 3.2rem !important; */}
   }
+
 
   .subheadingText {
     display: block;
     line-height: 1.1;
     letter-spacing: -0.035em;
-    ${"" /* margin-top: 4rem; */}
     margin-top: var(--grid-padding);
     text-transform: none;
     font-size: 3.2rem;

@@ -24,6 +24,11 @@ function SEO({ title, description }) {
     <Helmet>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
+      <link
+        type="text/css"
+        rel="stylesheet"
+        href="/animation-text.scss"
+      ></link>
     </Helmet>
   );
 }
