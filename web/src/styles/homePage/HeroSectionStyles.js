@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import '../../../public/animation-text.scss';
+// import '../../../public/animation-text.scss';
 
 export const HeroSectionStyles = styled.div`
   margin-top: 0;

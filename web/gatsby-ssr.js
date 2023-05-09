@@ -27,12 +27,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
       crossOrigin="anonymous"
       key="SctoGroteskA-Regular"
     />,
-    <link
-      type="text/css"
-      rel="preload stylesheet"
-      as="style"
-      href="/typed.scss"
-    />,
   ]);
 };
 
