@@ -296,7 +296,7 @@ section {
     }
 }
 
-@keyframes slideInFromRight {
+@keyframes slide-in-from-right {
     0% {
         -webkit-transform: translateX(100%);
         transform: translateX(100%);
@@ -307,7 +307,7 @@ section {
     }
 }
 
-@keyframes slideInFromRight-delay-5s {
+@keyframes slide-in-from-right-delay-5s {
     0% {
         -webkit-transform: translateX(100%);
         transform: translateX(100%);

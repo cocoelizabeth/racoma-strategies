@@ -3,19 +3,20 @@ import styled from 'styled-components';
 
 export const HeroSectionStyles = styled.div`
   margin-top: 0;
-
+${'' /* 
   height: 100%;
   min-height: calc(100vh - var(--header-height));
-  width: 100%;
+  width: 100%; */}
 
   .hero__wrapper {
     position: relative;
     background-color: var(--racoma-teal);
     margin-top: 0;
+    padding-bottom: var(--page-section);
 
-    display: flex;
+    ${'' /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */}
 
     ${"" /* margin-bottom: var(--page-section); */}
   }
@@ -64,16 +65,16 @@ export const HeroSectionStyles = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1023px) {
+  ${'' /* @media only screen and (max-width: 1023px) {
     height: calc(100vh - var(--header-height) - (var(--page-section) * 2));
     min-height: calc(100vh - var(--header-height) - (var(--page-section) * 2));
-  }
+  } */}
 
   @media only screen and (min-width: 1024px) {
     .hero-wrapper {
-      diplay: flex;
+      ${'' /* diplay: flex;
       height: 100%;
-      min-height: 100vh;
+      min-height: 100vh; */}
     }
     .headlineText {
       padding-bottom: 1em;
@@ -82,7 +83,7 @@ export const HeroSectionStyles = styled.div`
       width: 100%;
     }
     .subheadingText {
-      font-size: 4.2rem;
+      ${'' /* font-size: 4.2rem; */}
       font-size: 3.2rem;
       padding-left: 50%;
     }
@@ -91,8 +92,13 @@ export const HeroSectionStyles = styled.div`
     }
   }
 
+  .headlineText {
+    animation: slide-in-from-right 1.7s ease-out 0s 1;
+  }
+
   .subheadingText {
-    animation: fade-in-delay-5s 9s ease-out 0s 1;
+    ${'' /* animation: fade-in-delay-5s 9s ease-out 0s 1; */}
+    animation: slide-in-from-right 2.3s ease-out 0s 1;
   }
 
   ${

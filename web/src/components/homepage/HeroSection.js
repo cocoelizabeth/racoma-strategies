@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
 import MyPortableText from '../MyPortableText';
@@ -22,11 +22,64 @@ function HeroSection() {
 
   const { hero } = data.allSanityHome.nodes[0];
 
+  // const headlineRef = useRef();
+
+  // useEffect(() => {
+  //   const headlineElement = headlineRef.current;
+  //   console.log(headlineElement);
+  //   wordflick(headlineElement);
+  // }, []);
+
+  // const words = [hero.headlineText];
+  // let part;
+  // let i = 0;
+  // let offset = 0;
+  // const len = words.length;
+  // let forwards = true;
+  // let skip_count = 0;
+  // const skip_delay = 15;
+  // const speed = 45;
+
+  // function wordflick() {
+  //   setInterval(() => {
+  //     if (forwards) {
+  //       debugger;
+  //       if (offset >= words[i].length) {
+  //         ++skip_count;
+  //         if (skip_count == skip_delay) {
+  //           forwards = false;
+  //           skip_count = 0;
+  //         }
+  //       }
+  //     } else if (offset == 0) {
+  //       forwards = true;
+  //       i++;
+  //       offset = 0;
+  //       if (i >= len) {
+  //         i = 0;
+  //       }
+  //     }
+  //     part = words[i].substr(0, offset);
+  //     if (skip_count == 0) {
+  //       if (forwards) {
+  //         offset++;
+  //       } else {
+  //         // offset--;
+  //       }
+  //     }
+  //     if (headlineRef.current) {
+  //       headlineRef.current.textContent = part;
+  //     }
+  //     // $('.word').text(part);
+  //   }, speed);
+  // }
+
   return (
     <HeroSectionStyles>
       <section>
         <div className="hero__wrapper">
-          <div className="headlineText h2"></div>
+          {/* <div ref={headlineRef} className="headlineText h2 word"></div> */}
+          <div className="headlineText h2">{hero.headlineText}</div>
           {/* <div className="headlineText h2">
             <h1>{hero.headlineText}</h1>
           </div> */}
@@ -36,15 +89,13 @@ function HeroSection() {
               className="subheadingText__text"
               value={hero._rawSubHeadlineText}
             />
-            <span className="placeholder"></span>
+            <span className="placeholder" />
             <Button to={hero.link} tag={Link} className="heroCTA">
               {hero.cta}
             </Button>
           </div>
         </div>
-        <div className="lineBreakContainer">
-          {/* <div className="lineBreak"></div> */}
-        </div>
+
       </section>
       {/* <div className="hero__wrapper">
         <div className="left">
