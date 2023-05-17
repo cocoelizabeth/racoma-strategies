@@ -15,6 +15,15 @@ export const ContentSectionStyles = styled.div`
     grid-template-columns: 100%;
     p {
       margin-bottom: 2rem;
+      strong {
+        ${
+          '' /*             
+           font-weight: var(--font-weight-h3);
+          font-size: var(--font-size-h3);
+          line-height: var(--line-height-h3);
+          letter-spacing: var(--letter-spacing-h3); */
+        }
+      }
     }
     p:last-child,
     p:nth-child(3) {
