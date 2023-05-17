@@ -20,10 +20,12 @@ import textBlockCTA from './objects/textBlockCTA';
 import content from './objects/home/content';
 import criteriaLists from './objects/whatWeLookFor/criteriaLists';
 import textBlock from './objects/textBlock';
+import reasonsList from './whyUs/reasonsList';
 
 // import page documents
 import home from './pageDocuments/home';
 import whatWeLookFor from './pageDocuments/whatWeLookFor';
+import whyUs from './pageDocuments/whyUs';
 
 export default createSchema({
   name: 'default',
@@ -31,6 +33,7 @@ export default createSchema({
     // page documents,
     home,
     whatWeLookFor,
+    whyUs,
     // blog documents
     blog,
     author,
@@ -47,5 +50,6 @@ export default createSchema({
     content,
     textBlock,
     criteriaLists,
+    reasonsList,
   ]),
 });
