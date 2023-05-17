@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
       font-weight: 700;
       font-family: SctoGroteskA;
       font-named-instance: "Bold";
-      font-display: swap;
+      font-display: block;
       src: url(/fonts/SctoGroteskA-Bold.d6497298.woff2) format("woff2");
   }
 
@@ -39,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
       src: url(/fonts/SctoGroteskA-Medium.2ede3563.woff2) format("woff2");
       font-named-instance: "Medium";
       font-family: SctoGroteskA;
-      font-display: swap;
+      font-display: block;
   }
 
   @font-face {
@@ -47,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
       font-named-instance: "Regular";
       src: url(/fonts/SctoGroteskA-Regular.1e986128.woff2) format("woff2");
       font-family: SctoGroteskA;
-      font-display: swap;
+      font-display: block;
   }
 
   :root {
